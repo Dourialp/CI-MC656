@@ -78,7 +78,7 @@ def test_8_chars_with_no_upper_case_password_should_raise_exception():
 
 
 def test_8_chars_with_tilde_especial_character_password_should_raise_exception():
-    #given
+    # given
     validator = PasswordValidator(content="aA1bcde~")
     with pytest.raises(ProhibitedEspecialCharacterException):
         # when
@@ -86,7 +86,7 @@ def test_8_chars_with_tilde_especial_character_password_should_raise_exception()
 
 
 def test_8_chars_with_xor_especial_character_password_should_raise_exception():
-    #given
+    # given
     validator = PasswordValidator(content="aA1bcde^")
     with pytest.raises(ProhibitedEspecialCharacterException):
         # when
@@ -94,7 +94,7 @@ def test_8_chars_with_xor_especial_character_password_should_raise_exception():
 
 
 def test_8_chars_with_slash_especial_character_password_should_raise_exception():
-    #given
+    # given
     validator = PasswordValidator(content="aA1bcde/")
     with pytest.raises(ProhibitedEspecialCharacterException):
         # when

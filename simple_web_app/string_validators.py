@@ -78,7 +78,7 @@ class UpperCaseValidator(Validator):
 class ProhibitedEspecialCharacterValidator(Validator):
     def __init__(self):
         self.prohibited_set = set(["/", "^", "~"])
-    
+
     def validate(self, content):
         content_set = set(content)
         if not self.prohibited_set.isdisjoint(content_set):
